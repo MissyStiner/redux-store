@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/react-hooks';
 
 import Cart from "../components/Cart";
 import { useDispatch, useSelector } from 'react-redux';
-// import { useStoreContext } from "../utils/GlobalState";
+
 import {
   REMOVE_FROM_CART,
   UPDATE_CART_QUANTITY,

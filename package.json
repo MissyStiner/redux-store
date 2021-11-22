@@ -4,6 +4,7 @@
   "description": "AS a senior engineer working on an e-commerce platform<br>\r I WANT my platform to use Redux to manage global state instead of the Context API<br>\r SO THAT my website's state management is taken out of the React ecosystem",
   "main": "server/server.js",
   "scripts": {
+    "build": "cd client && npm run build",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "cd server && npm start",
     "start:dev": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
@@ -14,9 +15,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "apollo-server-express": "^2.15.0",
     "graphql": "^16.0.1",
     "if-env": "^1.0.4",
     "react-redux": "^7.2.6",
+    "redux-thunk": "^2.4.0",
     "stripe": "^8.190.0"
   },
   "devDependencies": {
